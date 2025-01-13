@@ -26,7 +26,7 @@ pytz
 qrcode 
 requests 
 tabulate 
-git+https://github.com/xditya/telegraph.git@41fd800#egg=telegraph 
+https://github.com/xditya/telegraph.git
 tgcrypto 
 youtube-search-python 
 yt-dlp 
