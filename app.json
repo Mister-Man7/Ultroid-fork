@@ -1,0 +1,56 @@
+{
+    "name": "Adel-Userbot",
+    "description": "Adel-userbot Dibuat Untuk String Telethon dan Pyrogram userbot yang stabil dan simpel.",
+    "logo": "https://telegra.ph/file/2784ee65894aae04a1115.jpg",
+    "keywords": [
+        "Telethon",
+        "Pyrogram"
+    ],
+    "repository": "https://graph.org/file/edf24b04b9b8f86ecacf0.jpg",
+    "success_url": "https://t.me/Dareenbott",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "Au ya cek my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Au ya cek my.telegram.org",
+            "required": true
+        },
+        "SESSION": {
+            "description": "Silakan isi Telethon Atau Pyrogram V2",
+            "required": true
+        },
+        "MONGO_URI": {
+            "description": "Silakan isi Mongo Db/Mongo Url . Jika Build Redis Gagal . Cara ambil nya ketik #tutor di @Darensupport.",
+            "required": true
+        },
+        "DB_NAME": {
+            "description": "Silakan isi DB_NAME. BEBAS ISI APA AJA",
+            "required": true
+        },
+        "HEROKU_API": {
+            "description": "Isi Coy Jan Dikosongin.",
+            "required": true
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Isi Coy Jan Dikosongin",
+            "required": true
+        }
+    },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "basic"
+        }
+    }
+}
